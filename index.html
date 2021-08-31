@@ -58,7 +58,7 @@
     <!-- Aside -->
     <aside class="form-wrapper">
       <!-- Download form -->
-      <form action="post" class="form-container">
+      <form action="javascript:void(0)" class="form-container">
         <h3>Descargar e-book gratis</h3>
         <fieldset>
           <input type="text" name="name" placeholder="Nombre">
@@ -69,7 +69,7 @@
           <label><input type="checkbox" name="legal"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
           <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
         </fieldset>
-        <button type="submit">Descargar</button>
+        <button id="submit-modal" type="submit">Descargar</button>
       </form>
     </aside>
   </div>
@@ -92,10 +92,12 @@
     </div>
   </footer>
   <!-- Pop-up -->
-  <div class="popup">
+  <div id="modal" class="popup" >
     <div class="caption">
-      <i class="fa fa-times"></i>
+      <i id="close" class="fa fa-times"></i>
       <p>¡Muchas gracias!</p>
+      <img src="img/inboundcycle-logo.png" class="popup__logotype" alt="InboundCycle">
     </div>
   </div>
+  <script src="/js/script.js"></script>
 </body>
