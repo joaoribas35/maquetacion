@@ -72,7 +72,7 @@ img {
 /*============== SEPARATOR IMAGE ==================*/
 
 .separator-image {
-  background-image: url("/img/separator-image.jpg");
+  background-image: url("/img/separator-image.png");
   background-size: auto;
   width: 100%;
   height: 145px;
