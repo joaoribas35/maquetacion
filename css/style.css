@@ -1,3 +1,184 @@
-.logotype {
-  background-color: red;
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+a:active {
+  color: var(--orange);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*================ VARIABLES CSS ================*/
+:root {
+  --orange: #ed5900;
+  --text-gray: #b1b1b1;
+  --separator-gray: #cacaca;
+  --form-gray: #ececec;
+  --bg-footer: #4f4f51;
+}
+
+/*==================== HEADER ===================*/
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 250px;
+}
+.social-icons {
+  display: flex;
+}
+
+.social-icons > li {
+  padding: 5px;
+}
+
+.social-icons > li > a > i {
+  color: var(--orange);
+}
+
+/*============== SEPARATOR IMAGE ==================*/
+
+.separator-image {
+  background-image: url("/img/separator-image.jpg");
+  background-size: auto;
+  width: 100%;
+  height: 145px;
+}
+
+/*================= CONTAINER =====================*/
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 250px 0 250px;
+}
+
+.content-wrapper__header {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 32px;
+}
+
+.content-wrapper__header > img {
+  position: relative;
+  top: -100px;
+}
+
+.content-wrapper__titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper__titles > h1 {
+  color: var(--orange);
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--separator-gray);
+}
+
+.content-wrapper__titles > h2 {
+  color: var(--text-gray);
+  padding-top: 40px;
+}
+
+.content-wrapper__header > p {
+  margin-top: -10px;
+}
+
+.emphasizes {
+  color: var(--orange);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 0;
+}
+
+/*======== ASIDE ===========*/
+
+.form-container {
+  background-color: var(--form-gray);
+  padding: 32px;
+}
+
+.form-container > h3 {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-size: 0.75rem;
+  margin-bottom: 30px;
+}
+
+.form-container > button {
+  background-color: var(--orange);
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+/*================= FOOTER =====================*/
+
+.footer-frame {
+  background-color: var(--bg-footer);
+  padding: 60px 250px;
+  width: 100%;
+  align-items: center;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .footer-frame > img {
+  width: 100%;
+} */
+
+.footer-frame__links {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.footer-frame__links > small {
+  color: white;
+}
+
+.footer-frame__links > nav > ul {
+  display: flex;
+  padding-left: 20px;
+}
+
+.footer-frame__links > nav > ul > li {
+  padding: 0 20px;
 }
