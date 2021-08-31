@@ -22,7 +22,7 @@ a:link {
 }
 
 a:visited {
-  color: white;
+  color: var(--orange);
 }
 
 a:hover {
@@ -41,10 +41,13 @@ img {
 /*================ VARIABLES CSS ================*/
 :root {
   --orange: #ed5900;
-  --text-gray: #b1b1b1;
+  --h2--gray: #b1b1b1;
+  --p-gray: #4f4f51;
   --separator-gray: #cacaca;
   --form-gray: #ececec;
   --bg-footer: #4f4f51;
+
+  --margin-side-lg: 250px;
 }
 
 /*==================== HEADER ===================*/
@@ -53,7 +56,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 30px 250px;
+  margin: 30px var(--margin-side-lg);
 }
 .social-icons {
   display: flex;
@@ -81,7 +84,7 @@ img {
 .wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 60px 250px 0 250px;
+  margin: 60px var(--margin-side-lg) 0 var(--margin-side-lg);
 }
 
 .content-wrapper__header {
@@ -107,7 +110,7 @@ img {
 }
 
 .content-wrapper__titles > h2 {
-  color: var(--text-gray);
+  color: var(--h2--gray);
   padding-top: 40px;
 }
 
@@ -147,11 +150,36 @@ img {
   font-weight: bold;
 }
 
+.form-container > fieldset {
+  border: none;
+  padding-bottom: 10px;
+}
+
+.form-container > fieldset > input {
+  border: 1px solid var(--h2--gray);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form-container > fieldset > input::placeholder {
+  color: var(--p-gray);
+}
+
+.form-container > fieldset > label {
+  font-size: 0.75rem;
+  border: none;
+  color: var(--p-gray);
+}
+
+.form-container > fieldset > label > input {
+  border: none;
+}
+
 /*================= FOOTER =====================*/
 
 .footer-frame {
   background-color: var(--bg-footer);
-  padding: 60px 250px;
+  padding: 60px var(--margin-side-lg);
   width: 100%;
   align-items: center;
 
