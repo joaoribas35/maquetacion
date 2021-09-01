@@ -115,6 +115,7 @@ img {
 
 .content-wrapper > p {
   margin-top: -50px;
+  margin-right: 10px;
 }
 
 .content-wrapper > p > a {
@@ -139,6 +140,8 @@ img {
 .form-container {
   background-color: var(--form-gray);
   padding: 32px;
+  width: 290px;
+  margin: 0 auto;
 }
 
 .form-container > h3 {
@@ -146,6 +149,7 @@ img {
   color: var(--orange);
   font-size: 0.75rem;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .form-container > button {
@@ -161,6 +165,8 @@ img {
 .form-container > fieldset {
   border: none;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-container > fieldset > input {
@@ -295,9 +301,9 @@ img {
   }
 }
 
-/* ==== max-width: 1225px ==== */
+/* ==== max-width: 1240px ==== */
 
-@media screen and (max-width: 1225px) {
+@media screen and (max-width: 1240px) {
   .wrapper {
     display: flex;
     flex-direction: column;
